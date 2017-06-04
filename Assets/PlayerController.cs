@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
-    public delegate void ActionListeners();
-    public event ActionListeners OnPlayersAction;
+//  public delegate void ActionListeners();
+//  public event ActionListeners OnPlayersAction;
     public GameObject CameraRotator;
     // Use this for initialization
     void Start () {
