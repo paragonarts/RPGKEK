@@ -15,20 +15,20 @@ public class EventsAll : MonoBehaviour {
     {
         Debug.Log("Ты вызвал меня TestDebugLogEvent");
     }
-    public void OpenSundukAnimation(Animator krishka)
+    public void OpenSundukAnimation(GameObject krishka)
     {
         
        
-            krishka.SetBool("status", true);
+          krishka.GetComponent<Animator>().SetBool("status", true);
       
         
 
 
     }
-    public void CloseSundukAnimation(Animator krishka)
+    public void CloseSundukAnimation(GameObject krishka)
     {
-        krishka.SetBool("status", false);
-     
+        krishka.GetComponent<Animator>().SetBool("status", false);
+
 
 
     }

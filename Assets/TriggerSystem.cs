@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TriggerSystem : MonoBehaviour
 {
   EventsAll playobjects = new EventsAll(); // Экземпляр класса с эвентами
-   public Animator krishka;
+   public GameObject krishka;
   public Text messagesuse;
   
   public string[] textmessage = new string[] {
@@ -13,7 +13,7 @@ public class TriggerSystem : MonoBehaviour
 
   };
 
-    delegate void EventGaming(Animator objectstest); // Главный делегат управления эвентами ( в данном случае это анимации ) ( сделаю рефакторинг на GameObject позже ) более универсальное )
+    delegate void EventGaming(GameObject objectstest); // Главный делегат управления эвентами ( в данном случае это анимации ) ( сделаю рефакторинг на GameObject позже ) более универсальное )
     event EventGaming manager = null; // На эту хрень подписываем эвенты
 
   
