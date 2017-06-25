@@ -17,8 +17,8 @@ public class ControllPlayer : MonoBehaviour
        
         transform.Translate(0, 0, translation);
         
-        float h = horizontalSpeed * Input.GetAxis("Mouse X");
-        float v = verticalSpeed * Input.GetAxis("Mouse Y");
-        transform.Rotate(v, h, 0);
+       float h = horizontalSpeed * Input.GetAxis("Mouse X");
+     //  float v = verticalSpeed * Input.GetAxis("Mouse Y");
+        transform.Rotate(0, h, 0);
     }
 }
